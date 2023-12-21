@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Площадь треугольника</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main class="main">
+        <div class="content__up">
+            <span class="content__up--header">
+                <p>Добро пожаловать!</p>
+            </span>
+        </div>
+        <div class="content__mid">
+            <div class="content__mid--left">
+                <span class="content__mid--header">
+                    Выберите условие:
+                </span>
+                <div class="content__mid--btn">
+                    <button onclick="firstBtn()">   
+                        Три стороны
+                    </button>
+                    <button onclick="secondBtn()">
+                        Высота и основание
+                    </button>
+                </div>
+                <div class="content__mid--form" id="firstForm" style="display: none;">
+                    <img src="img/treug3s.jpg" alt="*" class="content__mid--img">
+                    <div class="content__mid--input">
+                        <input type="text" placeholder="Сторона a" id="a">
+                        <input type="text" placeholder="Сторона b" id="b">
+                        <input type="text" placeholder="Сторона c" id="c">
+                        <button onclick="treug3s()">
+                            Расчитать
+                        </button>
+                    </div>
+                </div>
+                <div class="content__mid--form" id="secondForm" style="display: none;">
+                    <img src="img/treugah.png" alt="*" class="content__mid--img">
+                    <div class="content__mid--input">
+                        <input type="text" placeholder="Основание a" id="f">
+                        <input type="text" placeholder="Высота h" id="h">
+                        <button onclick="treugah()">
+                            Расчитать
+                        </button>
+                    </div>
+                </div>
+                <div class="content__mid--result">
+                    <span id="firstResult">
+
+                    </span>
+                    <span id="secondResult">
+
+                    </span>
+                </div>
+            </div>
+            <div class="content__mid--right">
+                <span id="headerForSlots">
+                    Предыдущие результаты:
+                </span>
+                <div class="content__mid--record">
+                    <input type="text" class="content__mid--slot" id="firstRec">
+                    <input type="text" class="content__mid--slot" id="secondRec">
+                    <input type="text" class="content__mid--slot" id="thirdRec">
+                    <input type="text" class="content__mid--slot" id="fourRec">
+                    <input type="text" class="content__mid--slot" id="fiveRec">
+                </div>
+            </div>
+        </div>
+        <div class="content__down">
+            <div class="content__down--btn">
+                <span>
+                    Изменить цвет блоков:
+                </span>
+                <div class="btn">
+                    <div class="up__btn">
+                        <button id="firstColor" onclick="firstColor()">
+
+                        </button>
+                        <button id="secondColor" onclick="secondColor()">
+
+                        </button>
+                        <button id="thirdColor" onclick="thirdColor()">
+
+                        </button>
+                    </div>
+                    <div class="down__btn">
+                        <button id="fourColor" onclick="fourColor()">
+
+                        </button>
+                        <button id="fiveColor" onclick="fiveColor()">
+
+                        </button>
+                        <button id="sixColor" onclick="sixColor()">
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="content__down--author">
+                <span>
+                    @fuzivar
+                </span>
+                <div>
+                    <img src="" alt="*">
+                    <img src="" alt="*">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
